@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Score Keeper</title>
+  <style>
+    .winner {
+      color: green;
+    }
+
+    .loser {
+      color: red;
+    }
+
+    html {
+      background-color: #FFF47D;
+    }
+
+    #container {
+      text-align: center;
+      margin-top: 6rem;
+      background-color: #FFF47D;
+    }
+
+    img {
+      width: 30%;
+      height: 15%;
+    }
+    h4{
+      display: inline-block;
+    }
+    .playing{
+      padding: 0.5rem;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+  <section id='container'>
+    <img class='img-fluid img-thumbnail' src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Table tennis">
+    <h1><span id='player1display'>0</span> to <span id='player2display'>0</span></h1>
+    <div class="container">
+
+      <div class='playing'>
+        <h4>Playing to: </h2>
+
+        <select name="" id="winPoints" class="form-select">
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="9">9</option>
+          <option value="11">11</option>
+          <option value="13">13</option>
+
+        </select>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+    <button id='button1' class='btn btn-primary'>Player 1</button>
+    <button id='button2' class='btn btn-primary'>Player 2</button>
+    <button id='reset' class='btn btn-outline-danger'>Reset</button>
+    <script src="app.js" charset="utf-8"></script>
+  </section>
+</body>
+
+</html>
